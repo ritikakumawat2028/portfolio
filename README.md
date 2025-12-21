@@ -6,7 +6,7 @@ It showcases my **skills, projects, services, and contact details** in a clean, 
 ---
 
 ## 🚀 Live Preview
-👉 **Live Site:** 
+👉 **Live Site:** (https://ritikakumawat2028.github.io/portfolio/)
 👉 **GitHub Repo:** 
 
 ---
