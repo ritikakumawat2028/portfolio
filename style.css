@@ -246,9 +246,31 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 120px rgba(56, 200, 236, 0.8);
 }
+.about-text h2 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.about-text h2 span {
+    color: #0ef;
+}
+
+.about-text h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin: 15px 0 25px;
+}
+
+.about-text p {
+    color: aliceblue;
+    font-size: 19px;
+    line-height: 1.6;
+    max-width: 600px;
+}
 
 
-
+/* 
 .about-text h2 {
     font-size: 60px;
 }
@@ -270,7 +292,7 @@ body {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
-}
+} */
 
 #services {
     color: aliceblue;
