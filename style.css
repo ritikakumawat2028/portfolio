@@ -994,3 +994,75 @@ form textarea {
         justify-content: center;
     }
 }
+@media (max-width: 768px) {
+
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar {
+        display: none; /* later add hamburger */
+    }
+
+    .home {
+        padding: 110px 5% 40px;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .btn-box {
+        margin: 20px auto;
+    }
+
+    .im {
+        width: 280px;
+        height: 280px;
+        box-shadow: 0 0 60px #4cc0dc;
+    }
+}
+@media (max-width: 480px) {
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .home-sci a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+
+    .btn-box {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+
+    .im {
+        width: 220px;
+        height: 220px;
+    }
+}
