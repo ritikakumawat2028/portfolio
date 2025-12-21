@@ -98,7 +98,9 @@ body {
     padding: 70px 10% 0;
 
 }
-
+.setwok{
+    display: flex;
+}
 .home-sci {
     display: flex;
 }
