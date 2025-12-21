@@ -890,55 +890,131 @@ section {
 .modal {
     display: none;
     position: fixed;
+    inset: 0;
     z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Modal Card */
 .modal-content {
-    background: #081b29;
+    background: linear-gradient(145deg, #081b29, #0b2538);
     color: #ededed;
-    width: 90%;
-    max-width: 600px;
-    margin: 5% auto;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #00eeff;
-    animation: slideUp 0.4s ease;
+    width: 92%;
+    max-width: 620px;
+    margin: 6% auto;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 238, 255, 0.4);
+    box-shadow:
+        0 0 30px rgba(0, 238, 255, 0.15),
+        0 20px 50px rgba(0, 0, 0, 0.6);
+    animation: slideUp 0.45s ease;
+    position: relative;
 }
 
 @keyframes slideUp {
     from {
-        transform: translateY(40px);
+        transform: translateY(50px) scale(0.95);
         opacity: 0;
     }
     to {
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
         opacity: 1;
     }
 }
 
+/* Close Button */
 .close-btn {
-    font-size: 28px;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    font-size: 30px;
     color: #00eeff;
-    float: right;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
+.close-btn:hover {
+    transform: rotate(90deg) scale(1.1);
+    color: #ffffff;
+}
+
+/* Headings */
 .modal h2 {
     color: #00eeff;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
 }
 
+.modal h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.modal h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #00eeff;
+    margin-top: 4px;
+}
+
+/* Paragraph */
+.modal p {
+    line-height: 1.7;
+    color: #cfdbe2;
+    font-size: 0.95rem;
+}
+
+/* List Styling */
 .modal ul {
     margin-top: 10px;
-    padding-left: 20px;
+    padding-left: 18px;
 }
 
 .modal ul li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 10px;
+    color: #d6e9f0;
+    font-size: 0.95rem;
+}
+
+.modal ul li::before {
+    content: "▹";
+    position: absolute;
+    left: -12px;
+    color: #00eeff;
+}
+
+/* Tools Section */
+.modal strong {
+    display: inline-block;
+    margin-top: 14px;
+    color: #00eeff;
+    font-weight: 600;
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 22px;
+        margin-top: 15%;
+    }
+
+    .modal h2 {
+        font-size: 1.4rem;
+    }
 }
