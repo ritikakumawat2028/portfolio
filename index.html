@@ -76,6 +76,13 @@
 
     </section>
     <section>
+        <div id="serviceModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+
         <div class="services" id="services">
             <div class="container">
                 <h1 class="sub-title">
@@ -99,7 +106,9 @@
                             <br>
                             Clean and structured code
                         </p>
-                        <a href="#" class="read">learn more</a>
+                        <a href="javascript:void(0)" class="read" onclick="openModal('frontend')">Learn more</a>
+
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                     <div>
                         <i class='bx bx-crop' style='color: #00eeff'></i>
@@ -118,7 +127,8 @@
                             <br>
                             User-centered design approach
                         </p>
-                        <a href="#" class="read">learn more</a>
+                        <a href="javascript:void(0)" class="read" onclick="openModal('uiux')">Learn more</a>
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                     <div>
                         <i class='bx  bx-bracket-curly' style='color: #00eeff'></i>
@@ -136,7 +146,8 @@
                             <br>
                             Understanding of full-stack architecture
                         </p>
-                        <a href="#" class="read">learn more</a>
+                        <a href="javascript:void(0)" class="read" onclick="openModal('backend')">Learn more</a>
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                 </div>
             </div>

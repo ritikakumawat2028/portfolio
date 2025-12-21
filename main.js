@@ -41,3 +41,77 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
+
+function openModal(service) {
+    const modal = document.getElementById("serviceModal");
+    const body = document.getElementById("modal-body");
+
+    if (service === "frontend") {
+        body.innerHTML = `
+        <h2>🟦 Frontend Web Development</h2>
+        <p>I specialize in creating responsive, fast, and visually appealing websites using modern frontend technologies.</p>
+
+        <h3>What I Do</h3>
+        <ul>
+            <li>Build responsive layouts using HTML, CSS, Tailwind CSS, and Bootstrap</li>
+            <li>Develop interactive UI components with JavaScript and React.js</li>
+            <li>Ensure cross-browser compatibility and mobile-first design</li>
+            <li>Optimize performance and write clean, readable code</li>
+        </ul>
+
+        <strong>Tools & Technologies</strong>
+        <p>HTML • CSS • JavaScript • React.js • Tailwind CSS • Bootstrap</p>
+        `;
+    }
+
+    if (service === "uiux") {
+        body.innerHTML = `
+        <h2>🎨 UI/UX Design</h2>
+        <p>I design user-centric interfaces that are simple, intuitive, and visually consistent using Figma.</p>
+
+        <h3>What I Do</h3>
+        <ul>
+            <li>Create wireframes and UI layouts using Figma</li>
+            <li>Design clean interfaces following UI/UX principles</li>
+            <li>Convert Figma designs into responsive web pages</li>
+            <li>Improve visual hierarchy and user flow</li>
+        </ul>
+
+        <strong>Tools & Technologies</strong>
+        <p>Figma • UI Principles • Responsive Design • Design-to-Code</p>
+        `;
+    }
+
+    if (service === "backend") {
+        body.innerHTML = `
+        <h2>⚙️ Backend & API Integration</h2>
+        <p>I have working knowledge of backend technologies to understand full-stack workflows.</p>
+
+        <h3>What I Do</h3>
+        <ul>
+            <li>Integrate frontend applications with REST APIs</li>
+            <li>Work with Node.js and Express.js for basic backend logic</li>
+            <li>Handle form submissions and data flow</li>
+            <li>Understand full-stack application architecture</li>
+        </ul>
+
+        <strong>Tools & Technologies</strong>
+        <p>Node.js • Express.js • REST APIs • JSON</p>
+        `;
+    }
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("serviceModal").style.display = "none";
+}
+
+window.onclick = function (event) {
+    const modal = document.getElementById("serviceModal");
+    if (event.target === modal) {
+        closeModal();
+    }
+};
+
