@@ -9,7 +9,7 @@
 
 body {
     color: #ededed;
-    background: #081b29; 
+    background: #081b29;
     overflow-x: hidden;
 }
 
@@ -98,9 +98,11 @@ body {
     padding: 70px 10% 0;
 
 }
-.setwok{
+
+.setwok {
     display: flex;
 }
+
 .home-sci {
     display: flex;
 }
@@ -194,22 +196,31 @@ body {
         0 0 100px cyan, 0 0 200px cyan;
 }
 
-.aboustyl{
-    padding-right: 2px;
+.aboustyl {
+    min-height: 100vh;
+    padding: 120px 8% 60px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 3rem;
 }
+
 .about {
+    display: contents;
+    /* keeps grid clean */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
 }
 
-.about-img img {
+/*.about-img img {
     /* padding-bottom: 20%;
     max-width: 630px;
     height: 355px;
     width: 381px;
-    border-radius: 300px; */
+    border-radius: 300px; 
+
     padding-bottom: 2%;
     max-width: 630px;
     height: 399px;
@@ -218,9 +229,25 @@ body {
     margin-left: 200px;
     margin-top: 60px;
     color: #111;
-
     box-shadow: 0 0 100px #38c8ec
+}*/
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.about-img img {
+    width: 420px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 120px rgba(56, 200, 236, 0.8);
+}
+
+
 
 .about-text h2 {
     font-size: 60px;
@@ -623,7 +650,7 @@ section {
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
-   
+
 }
 
 .row img {
@@ -829,7 +856,7 @@ form textarea {
     right: 2.1rem;
 }
 
-.top i{
+.top i {
     color: #000;
     background: #0ef;
     font-size: 20px;
