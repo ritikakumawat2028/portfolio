@@ -187,7 +187,7 @@ body {
     animation-delay: 2s;
     box-shadow: 0 0 5px,
         0 0 25px #0ef;
-
+    margin: 20px;
 }
 
 .btn-box:hover {
@@ -207,11 +207,7 @@ body {
 
 .about {
     display: contents;
-    /* keeps grid clean */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
+    
 }
 
 /*.about-img img {
