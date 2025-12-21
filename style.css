@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    /* font-family: 'poppins', 'sans-serif' ; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 20px 6%;
+    padding: 20px 10%;
     background: #051129;
     display: flex;
     justify-content: space-between;
@@ -884,188 +885,5 @@ form textarea {
     100% {
         transform: translateX(0px);
         opacity: 1;
-    }
-}
-/* ================= MEDIA QUERIES ================= */
-/* ================= MEDIA QUERIES ================= */
-
-@media (max-width: 1200px) {
-    .navbar {
-        padding-left: 0;
-    }
-
-    .navbar a {
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    .container {
-        padding: 60px;
-    }
-
-    .about-img img {
-        margin-left: 0;
-        margin-top: 30px;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .portfolio-content {
-        padding-left: 0;
-        gap: 40px;
-    }
-}
-
-@media (max-width: 992px) {
-    .header {
-        padding: 15px 6%;
-    }
-
-    .navbar {
-        padding-left: 0;
-    }
-
-    .home {
-        flex-direction: column-reverse;
-        align-items: center;
-        padding-top: 110px;
-    }
-
-    .home-content {
-        max-width: 100%;
-        text-align: center;
-        padding: 0 1rem;
-    }
-
-    .home-im {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
-
-    .im {
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        margin: 0;
-        box-shadow: 0 0 60px #4cc0dc;
-    }
-
-    .about {
-        grid-template-columns: 1fr;
-        padding: 40px 6%;
-    }
-
-    .about-text {
-        text-align: center;
-    }
-
-    .container {
-        padding: 40px 6%;
-    }
-
-    .portfolio-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        padding-left: 0;
-    }
-
-    .row img {
-        width: 100%;
-        height: auto;
-        max-width: 650px;
-        margin: 0 auto;
-    }
-
-    .Contact {
-        grid-template-columns: 1fr;
-        padding-left: 0;
-        gap: 1.5rem;
-    }
-
-    .contact-text {
-        text-align: center;
-    }
-
-    .contact-form form input,
-    form textarea {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .home-content h1 {
-        font-size: 36px;
-    }
-
-    .home-content h3 {
-        font-size: 20px;
-    }
-
-    .navbar a {
-        font-size: 18px;
-        margin-left: 12px;
-    }
-
-    .sub-title {
-        font-size: 34px;
-        padding-bottom: 40px;
-    }
-
-    .services-list {
-        grid-template-columns: 1fr;
-    }
-
-    .container1 {
-        width: auto;
-        padding: 40px 6%;
-    }
-
-    .main-text h2 {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 12px 4%;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .navbar a {
-        font-size: 16px;
-        margin-left: 8px;
-        padding: 6px 8px;
-    }
-
-    .home-content h1 {
-        font-size: 28px;
-    }
-
-    .im {
-        width: 220px;
-        height: 220px;
-    }
-
-    .about-text h2 {
-        font-size: 36px;
-    }
-
-    .contact-text h2 {
-        font-size: 40px;
-    }
-
-    .contact-form textarea {
-        height: 160px;
-    }
-
-    .top {
-        right: 1rem;
-        bottom: 1rem;
     }
 }
