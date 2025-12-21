@@ -194,7 +194,9 @@ body {
         0 0 100px cyan, 0 0 200px cyan;
 }
 
-
+.aboustyl{
+    padding-right: 2px;
+}
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
