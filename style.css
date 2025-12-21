@@ -559,7 +559,7 @@ section {
 
 .row img {
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
