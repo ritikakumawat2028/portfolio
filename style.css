@@ -37,7 +37,7 @@ body {
     }
 
     .navbar {
-       padding-left: 0; 
+       /* padding-left: 563px;  */
 
     }
 
@@ -952,117 +952,32 @@ form textarea {
         width: 220px;
     }
 }
-@media (max-width: 1024px) {
 
-    .navbar a {
-        font-size: 20px;
-        margin-left: 20px;
-    }
 
-    .home {
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-        padding: 120px 6% 60px;
+@media (max-width: 992px) {
+    .setwok {
+        grid-template-columns: 1fr;
         text-align: center;
     }
 
+    .home-im img {
+        width: 300px;
+    }
+
     .home-content {
-        max-width: 100%;
-        margin: 0;
-    }
-
-    .home-content h1 {
-        font-size: 42px;
-    }
-
-    .home-content h3 {
-        font-size: 24px;
-    }
-
-    .home-content p {
-        font-size: 18px;
-    }
-
-    .im {
-        width: 380px;
-        height: 380px;
-        margin-top: 40px;
-    }
-
-    .home-sci {
-        justify-content: center;
-    }
-}
-@media (max-width: 768px) {
-
-    .header {
-        padding: 15px 5%;
-    }
-
-    .logo {
-        font-size: 22px;
-    }
-
-    .navbar {
-        display: none; /* later add hamburger */
-    }
-
-    .home {
-        padding: 110px 5% 40px;
-    }
-
-    .home-content h1 {
-        font-size: 34px;
-    }
-
-    .home-content h3 {
-        font-size: 20px;
-    }
-
-    .home-content p {
-        font-size: 16px;
-    }
-
-    .btn-box {
-        margin: 20px auto;
-    }
-
-    .im {
-        width: 280px;
-        height: 280px;
-        box-shadow: 0 0 60px #4cc0dc;
+        margin: 0 auto;
     }
 }
 @media (max-width: 480px) {
-
     .home-content h1 {
-        font-size: 28px;
+        font-size: 38px;
     }
 
     .home-content h3 {
-        font-size: 18px;
+        font-size: 22px;
     }
 
-    .home-content p {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .home-sci a {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-        margin: 15px 8px;
-    }
-
-    .btn-box {
-        padding: 10px 22px;
-        font-size: 14px;
-    }
-
-    .im {
+    .home-img img {
         width: 220px;
-        height: 220px;
     }
 }
