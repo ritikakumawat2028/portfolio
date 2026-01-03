@@ -3,13 +3,13 @@
 This is my **personal portfolio website** built using **HTML, CSS, and JavaScript**.  
 It showcases my **skills, projects, services, and contact details** in a clean, modern, and fully responsive design.
 
----
+----
 
 ## 🚀 Live Preview
 - 👉 **Live Site:** (https://ritikakumawat2028.github.io/portfolio/)
 - 👉 **GitHub Repo:**(https://github.com/ritikakumawat2028/portfolio) 
 
----
+----
 
 ## 📌 Features
 - ✅ Fully responsive (Desktop, Tablet & Mobile)
@@ -21,7 +21,7 @@ It showcases my **skills, projects, services, and contact details** in a clean, 
 - 🔝 Back to top button
 - 🌙 Clean & professional design
 
----
+----
 
 ## 🛠️ Technologies Used
 - **HTML5**
