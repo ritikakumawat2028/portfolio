@@ -67,8 +67,8 @@
                     Alongside frontend expertise, I also have working knowledge of backend technologies such as Node.js
                     and Express.js, allowing me to understand full-stack workflows and API integration. I enjoy
                     translating UI designs from Figma into functional, high-performance web experiences. I am eager to
-                    learn, grow in a professional environment, and contribute to real-world projects as a Web Developer
-                    Intern.
+                    learn, grow in a professional environment, and contribute to real-world business and academic
+                    projects as a Web Developer Intern and Freelancer.
                 </p>
 
             </div>
@@ -265,7 +265,8 @@
                                 Tech: HTML, CSS, JavaScript, React
                                 Role: Frontend Developer
                             </p>
-                            <a href="https://readdy.link/preview/e1d5f13d-be33-4545-b683-88a88a6b6e44/2829710"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                            <a href="https://readdy.link/preview/e1d5f13d-be33-4545-b683-88a88a6b6e44/2829710"><i
+                                    class='bx bx-link-external' style="color: aliceblue;"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -277,7 +278,8 @@
                                 Tech: HTML, CSS, JavaScript
                                 Role: Frontend Developer
                             </p>
-                            <a href=" https://ritikakumawat2028.github.io/Dreamhome/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                            <a href=" https://ritikakumawat2028.github.io/Dreamhome/"><i class='bx bx-link-external'
+                                    style="color: aliceblue;"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -289,7 +291,8 @@
                                 Tech: HTML, CSS, JavaScript
                                 Role: Frontend Developer.
                             </p>
-                            <a href="https://github.com/ritikakumawat2028/Rkt-Fitvibe-fitness"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                            <a href="https://github.com/ritikakumawat2028/Rkt-Fitvibe-fitness"><i
+                                    class='bx bx-link-external' style="color: aliceblue;"></i></a>
                         </div>
                     </div>
                 </div>
@@ -321,18 +324,18 @@
             </div>
         </div>
         <div class="contact-form">
-    <form id="contact-form">
-        <input type="text" name="user_name" placeholder="Enter Your Name" required>
+            <form id="contact-form">
+                <input type="text" name="user_name" placeholder="Enter Your Name" required>
 
-        <input type="email" name="user_email" placeholder="Enter Your Email" required>
+                <input type="email" name="user_email" placeholder="Enter Your Email" required>
 
-        <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
 
-        <textarea name="message" cols="40" rows="18" placeholder="Enter Your Message" required></textarea>
+                <textarea name="message" cols="40" rows="18" placeholder="Enter Your Message" required></textarea>
 
-        <input type="submit" value="Submit" class="send">
-    </form>
-</div>
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
 
 
     </section>
@@ -346,28 +349,28 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-(function () {
-    emailjs.init("8x8z3KTPM-dqwmkBg"); 
-})();
+    (function () {
+        emailjs.init("8x8z3KTPM-dqwmkBg");
+    })();
 
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    emailjs.sendForm(
-        "service_rsb5dql",
-        "template_r722ntm",  
-        this
-    ).then(
-        () => {
-            alert("✅ Message sent successfully!");
-            this.reset();
-        },
-        (error) => {
-            alert("❌ Message failed. Try again!");
-            console.log(error);
-        }
-    );
-});
+        emailjs.sendForm(
+            "service_rsb5dql",
+            "template_r722ntm",
+            this
+        ).then(
+            () => {
+                alert("✅ Message sent successfully!");
+                this.reset();
+            },
+            (error) => {
+                alert("❌ Message failed. Try again!");
+                console.log(error);
+            }
+        );
+    });
 </script>
 
 </html>
